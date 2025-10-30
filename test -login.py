@@ -1,6 +1,15 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
+import pytest
+
+@pytest.mark.parametraze  ("standard_user", "secret_sauce"),(
+
+    ("locked_out_user", "secret_sauce"),
+
+    ("problem_user", "secret_sauce"),
+
+    ("performance_glitch_user", "secret_sauce"),
 
 def test_login():
     driver = webdriver.Chrome()
